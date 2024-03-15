@@ -4,8 +4,8 @@ title: "My Favourite Books"
 excerpt: "These are some of my favourite books, which are best in their class."
 author_profile: true
 redirect_from: 
-  - "/books/"
-  - "/books.html"
+  - "/nmp/"
+  - "/nmp.html"
 ---
 
 ## [Rich Dad Poor Dad]()
