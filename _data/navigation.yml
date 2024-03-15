@@ -5,11 +5,14 @@ main:
   
   - title: "Research"
     url: /research/
-    
-  - title: "CV"
-    url: /404.html
-  
+      
+  - title: "Books"
+    url: /books/
 
+  - title: "CV"
+    url: https://drive.google.com/file/d/1weFfpb2XDA8rpI59v9CbHaCWlZ0LqQdh/view?usp=sharing
+
+    
   # - title: "Publications"
   #   url: /publications/
 
