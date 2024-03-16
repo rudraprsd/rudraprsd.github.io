@@ -18,8 +18,7 @@ Education:
 ------- 
 
 * **Indian Institute of Science Education and Research Berhampur**
-
-  *BS-MS Dual Degree Major in Physics with a Minor in Computer Sciences*
+    <sub><sup>BS-MS Dual Degree Major in Physics with a Minor in Computer Sciences<sub><sup>
 
 
 
