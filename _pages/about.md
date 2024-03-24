@@ -17,8 +17,8 @@ I am Rudra Prasad Sahu, currently pursuing a Major in **Physics** and a Minor in
 Education:
 ------- 
 
-* **Indian Institute of Science Education and Research Berhampur**
-    <sub><sup>BS-MS Dual Degree Major in Physics with a Minor in Computer Sciences<sub><sup>
+* **Indian Institute of Science Education and Research Berhampur** <br>
+    BS-MS Dual Degree Major in Physics with a Minor in Computer Sciences
 
 
 
