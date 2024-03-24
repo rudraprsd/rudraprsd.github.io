@@ -11,6 +11,7 @@ main:
 
   - title: "CV"
     url: https://drive.google.com/file/d/1weFfpb2XDA8rpI59v9CbHaCWlZ0LqQdh/view?usp=sharing
+    target: "_blank"
 
     
   # - title: "Publications"
