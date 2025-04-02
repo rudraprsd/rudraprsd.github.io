@@ -149,13 +149,17 @@
         }
 
         .card a {
-            color: var(--text-primary);
+            color: var(--accent-color);
             text-decoration: none;
+            position: relative;
+            padding-bottom: 1px;
+            border-bottom: 1px solid rgba(88, 166, 255, 0.3);
+            transition: all 0.3s ease;
         }
 
         .card a:hover {
-            color: #2980b9;
-            text-decoration: underline;
+            color: #7cb9ff;
+            border-bottom: 1px solid rgba(88, 166, 255, 0.8);
         }
 
         .social-links {
@@ -279,6 +283,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -288,7 +293,7 @@
         <section id="about">
             <h2>About</h2>
             <div class="card">
-                <p>I'm a BS-MS student at IISER Berhampur with a passion for machine learning and material science. Currently focusing on computational methods in physics and their applications in materials research.</p>
+                <p>I'm a BS-MS student at IISER Berhampur with a passion for Deep Learning and Materials Science. My research interests focus on applying AI and deep learning in physics, particularly for materials discovery and characterization.</p>
             </div>
         </section>
 
@@ -313,10 +318,10 @@
             </div>
         </section>
 
-        <section id="publications">
+        <section id="projects">
             <h2>Projects</h2>
             <div class="card">
-                <h3><a href="https://matrapin.netlify.app/" target="_blank" rel="noopener noreferrer">Matrapin Website</a></h3>
+                <h3><a href="https://matrapin.netlify.app/" target="_blank" rel="noopener noreferrer">Matrapin</a></h3>
                 <p>Password generation from shape of your language script, instead of keeping birthdays, phone number as passwords which are predictable. You just need to remember a word.</p>
             </div>
         </section>
