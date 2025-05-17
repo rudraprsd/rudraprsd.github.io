@@ -1,24 +1,34 @@
-Hi ! 
+![Profile Photo of Rudra Prasad Sahu](assets/profile_img.jpg){ align=center width="180" }
+# Rudra Prasad Sahu
+BS-MS 4th Year, Physics and Computer Science
 
-This is my much waited website.
-Everything is written using markdown.
-You will know markdown is a great language. You can do anything with it. Yes, anything.
-and if you already know this then welcome to the club. and You are among 0.1%.
+[LinkedIn](https://www.linkedin.com/in/rudra-prasad-sahu-631227226/) | [GitHub](https://github.com/rudraprsd)
 
-# Welcome to MkDocs
+## About
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+I'm a BS-MS student at IISER Berhampur with a passion for Deep Learning and Materials Science. My research interests focus on applying AI and deep learning in physics, particularly for materials discovery and characterization.
 
-## Commands
+## Research
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Automation of High-throughput Band Structure Calculation
+Developed an automated high-throughput band structure calculation pipeline under [Dr. Bahadur Singh](https://sites.google.com/view/bahadur/home):
+- Implemented code for VASP calculations from structure files
+- Automated generation of density of states, band structures, and orbital-projected band structure plots
+- Streamlined workflow for efficient electronic structure analysis and visualization
 
-## Project layout
+## Publications
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Ongoing research - publications in progress
+
+## Projects
+
+### [Matrapin](https://matrapin.netlify.app/)
+Password generation from shape of your language script, instead of keeping birthdays, phone number as passwords which are predictable. You just need to remember a word.
+
+## Contact
+
+Email: rudraprasad01@outlook.com
+Address: 369, Boys Hostel, IISER Berhampur, Konisi, Berhampur, 760003
+
+---
+&copy; 2024 Rudra Prasad Sahu
