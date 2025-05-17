@@ -32,7 +32,6 @@ plugins:
   - tags:
       tags_file: tags.md
   - blog
-  - optimize
 
 markdown_extensions:
   - pymdownx.highlight:
