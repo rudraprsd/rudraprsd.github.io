@@ -29,8 +29,7 @@ theme:
 
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
+  - tags
   - blog
 
 markdown_extensions:
@@ -52,3 +51,12 @@ nav:
     - Python: coding/hello_world.md
   - Blogs:
     - blog/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rudraprsd
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rudra-prasad-sahu/
+
+copyright: Copyright &copy; 2025 Rudra Prasad Sahu
