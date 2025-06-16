@@ -4,7 +4,7 @@
   <img src="assets/profile_img.jpg" alt="Profile image of Rudra Prasad Sahu" width="180">
 </p> -->
 
-<img src="assets/dragon_1.png" alt="Dragon Sticker" style="width:350px; float:right; margin-top:-30px; margin-right:-20px; position:relative; z-index:5;" />
+<img src="assets/dragon_1.png" alt="Dragon Sticker" style="width:350px; float:right; margin-top:-30px; margin-right:-20px; position:relative; z-index:2;" />
 
 # Rudra Prasad Sahu
 BS-MS 5th Year, Physics and Computer Science
