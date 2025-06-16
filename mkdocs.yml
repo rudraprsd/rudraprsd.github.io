@@ -3,18 +3,13 @@ site_url: https://rudraprsd.github.io/
 theme:
   name: material
   palette: 
+    primary: brown
+    accent: amber
+    scheme: slate
+  font:
+    text: Roboto
+    code: Roboto Mono
 
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -54,6 +49,8 @@ nav:
 
 extra:
   social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:rudraprasad01@outlook.com
     - icon: fontawesome/brands/github
       link: https://github.com/rudraprsd
     - icon: fontawesome/brands/linkedin
