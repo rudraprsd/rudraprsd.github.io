@@ -21,6 +21,7 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
+    - toc.integrate
 
 plugins:
   - search
@@ -38,12 +39,14 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - About: 
-    - About Me: about/about.md
-    - My Childhood: about/childhood.md
-  - Tags: tags.md
-  - Codes: 
-    - Python: coding/hello_world.md
+  - About: about.md
+    # - About Me: about/about.md
+    # - My Childhood: about/childhood.md
+  # - Tags: tags.md
+  # - Codes: 
+    # - Python: coding/hello_world.md
+  - Projects:
+    - projects/projects.md
   - Blogs:
     - blog/index.md
 

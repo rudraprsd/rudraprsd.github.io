@@ -1,10 +1,10 @@
-# Winter is coming.
+<!-- # Winter is coming. -->
 
 <!-- <p style="text-align: center;">
   <img src="assets/profile_img.jpg" alt="Profile image of Rudra Prasad Sahu" width="180">
 </p> -->
 
-<img src="assets/dragon_1.png" alt="Dragon Sticker" style="width:350px; float:right; margin-top:-30px; margin-right:-20px; position:relative; z-index:2;" />
+<!-- <img src="assets/dragon_1.png" alt="Dragon Sticker" style="width:350px; float:right; margin-top:-30px; margin-right:-20px; position:relative; z-index:2;" /> -->
 
 # Rudra Prasad Sahu
 BS-MS 5th Year, Physics and Computer Science
@@ -12,7 +12,7 @@ BS-MS 5th Year, Physics and Computer Science
 
 ## About
 
-I'm a BS-MS student at IISER Berhampur with a passion for Deep Learning and Materials Science. I am highly interested in Deep Learning and AI. I love to work in these fields. I am taliking about the AI which is **Not the unnecessary hype in every tech materials you see these days but the actual problem solving in fields like physics, mathematics, security, medicine, computer vision, Biology and many fields you can imagine.**
+I'm a BS-MS student at IISER Berhampur with a passion for Deep Learning. I am highly interested in Deep Learning and AI.
 
 ## Research
 
