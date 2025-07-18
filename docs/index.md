@@ -7,7 +7,10 @@
 <!-- <img src="assets/dragon_1.png" alt="Dragon Sticker" style="width:350px; float:right; margin-top:-30px; margin-right:-20px; position:relative; z-index:2;" /> -->
 
 # Rudra Prasad Sahu
-BS-MS 5th Year, Physics and Computer Science
+BS-MS 5th Year, Major in Physics and Minor in Computer Science
+
+!!! quote
+    **After three days without programming, life becomes meaningless**
 
 
 ## About
@@ -25,11 +28,14 @@ Developed an automated high-throughput band structure calculation pipeline under
 
 ## Publications
 
-Ongoing research - publications in progress
+### QuantumReservoirPy: A Software Package for Time Series Prediction
+**Reviewer**
+
 
 <!-- <div style="float: right; width: 320px; margin: 0 0 10px 20px;">
   <img src="assets/dragon_1.png" alt="Dragon" style="width: 100%; border-radius: 8px;" />
 </div> -->
+
 ## Projects
 
 ### [Matrapin](https://matrapin.netlify.app/)
