@@ -28,9 +28,11 @@ Developed an automated high-throughput band structure calculation pipeline under
 
 ## Publications
 
-### QuantumReservoirPy: A Software Package for Time Series Prediction
+### [QuantumReservoirPy: A Software Package for Time Series Prediction](https://doi.org/10.21105/joss.07994)
 **Reviewer**
 
+### [MultiVae: A Python package for Multimodal Variational Autoencoders on Partial Datasets](https://doi.org/10.21105/joss.07996)
+**Reviewer**
 
 <!-- <div style="float: right; width: 320px; margin: 0 0 10px 20px;">
   <img src="assets/dragon_1.png" alt="Dragon" style="width: 100%; border-radius: 8px;" />
