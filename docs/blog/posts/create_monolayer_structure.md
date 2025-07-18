@@ -19,7 +19,7 @@ There are various methods you can build a monolayer structure fromo bulk. I will
 To use this method, you must have a clear understanding and visualization in you mind, what you are doing.
 Through this trick it is both quick and easily reproducible and you can do for large number of structures in a high-throughput manner.
 
-There are plenty of codes present to do this. You can find in github. Some are in bash scripts too. But we will use pymatgen. There is an
+There are plenty of codes available to do this. You can find in github. Some are in bash scripts too. But we will use pymatgen. There is an
 option for ase.
 
 But pymatgen is using ase in background, and it's crystal structure visualizatin is great.
@@ -30,3 +30,8 @@ import crystal_toolkit
 > I will include a jupyter lab file (.ipynb) directly for this.
 
 <!-- using mkdocs-jupyter  -->
+
+
+### Using VESTA
+
+For installation of VESTA, follow VESTA Official Website.
