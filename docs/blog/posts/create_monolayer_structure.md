@@ -8,6 +8,8 @@ tags:
 
 ## How to create a monolayer structure from bulk ?
 
+<!-- more -->
+
 There are various methods you can build a monolayer structure fromo bulk. I will explain two easy methods
 
 - Using VESTA

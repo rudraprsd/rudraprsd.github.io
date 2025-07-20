@@ -3,9 +3,26 @@ site_url: https://rudraprsd.github.io/
 theme:
   name: material
   palette: 
-    primary: brown
-    accent: amber
-    scheme: slate
+    # primary: brown
+    # accent: amber
+    # scheme: slate
+    # primary: black
+    # accent: orange
+    # scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: The night is dark and full of terrors
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Dracarys
   font:
     text: Roboto
     code: Roboto Mono
@@ -15,29 +32,44 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    - toc.integrate
+    # - toc.integrate  # this will show the table of contets and all in left side
+    - toc.follow
+    - toc.anchor
     - navigation.top
     - search.suggest
     - search.highlight
     - search.share
     - content.code.copy
-    - toc.integrate
 
 plugins:
   - search
   - tags
-  - blog
+  - blog:
+      # blog_toc: true
+      post_excerpt: required
+      post_excerpt_max_authors: 1
+      post_excerpt_max_categories: 2
+      post_readtime: true
+      # post_readtime_words_per_minute: 200
+  # - social:
+  #     cards_layout_options:
+  #       background_color: "#1e293b"
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      # auto_title: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home: index.md
@@ -56,9 +88,12 @@ extra:
   social:
     - icon: fontawesome/solid/envelope
       link: mailto:rudraprasad01@outlook.com
+      name: Email
     - icon: fontawesome/brands/github
       link: https://github.com/rudraprsd
+      name: GitHub
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/rudra-prasad-sahu/
+      name: LinkedIn
 
-copyright: Copyright &copy; 2025 Rudra Prasad Sahu
+copyright: Copyright &copy; 2025 Rudra Prasad Sahu | Valar Morghulis.
