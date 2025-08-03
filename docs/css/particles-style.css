@@ -1,0 +1,21 @@
+#particles-js {
+    position: fixed; /* Fixed position relative to the viewport */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Or a subtle background color if you prefer */
+    background-image: url(""); /* Optional: Add a subtle background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1; /* Puts it behind all standard content */
+}
+
+/* Ensure body and html are full height for fixed positioning to work correctly */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrollbar if particles render slightly off-screen */
+}
