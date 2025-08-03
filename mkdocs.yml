@@ -11,22 +11,22 @@ theme:
     # scheme: slate
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: indigo
+      primary: white
+      accent: red
       toggle:
         icon: material/brightness-7
         name: The night is dark and full of terrors
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: cyan
+      primary: brown
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Dracarys
   font:
     text: Roboto
     code: Roboto Mono
-
+  
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -40,6 +40,13 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
+
+extra_css:
+  - css/particles-style.css
+
+extra_javascript:
+  - js/particles.min.js
+  - js/particles-config.js
 
 plugins:
   - search
@@ -79,8 +86,7 @@ nav:
   # - Tags: tags.md
   # - Codes: 
     # - Python: coding/hello_world.md
-  - Projects:
-    - projects/projects.md
+  - Projects: projects.md
   - Blogs:
     - blog/index.md
 
