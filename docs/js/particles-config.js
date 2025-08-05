@@ -11,6 +11,27 @@ function isMobileDevice() {
     return window.matchMedia("(max-width: 768px)").matches;
 }
 
+// Function to get theme-appropriate particle colors
+function getParticleColors() {
+    const isDarkMode = document.body.getAttribute('data-md-color-scheme') === 'slate';
+    
+    if (isDarkMode) {
+        return {
+            nodeColor: "#FFB300",      // Amber accent - warm and subtle
+            lineColor: "#546E7A",      // Blue grey - low contrast, non-distracting
+            nodeOpacity: 0.18,         // Reduced for reading comfort
+            lineOpacity: 0.06          // Very subtle connections
+        };
+    } else {
+        return {
+            nodeColor: "#FF6F00",      // Deep orange - warm but not aggressive
+            lineColor: "#78909C",      // Light blue grey - barely visible
+            nodeOpacity: 0.12,         // Lower for light backgrounds
+            lineOpacity: 0.04          // Almost invisible but present
+        };
+    }
+}
+
 // Function to initialize particles
 function initParticles() {
     if (!isHomepage()) {
@@ -29,17 +50,19 @@ function initParticles() {
     particlesDiv.id = 'particles-js';
     document.body.appendChild(particlesDiv);
 
+    const colors = getParticleColors();
+
     let particlesConfig = {
         "particles": {
             "number": {
-                "value": 25, // **Fewer, more distinct nodes (neurons)**
+                "value": 30, // Slightly increased for better effect
                 "density": {
                     "enable": true,
-                    "value_area": 1000 // Increase value_area for a sparser distribution
+                    "value_area": 1200 // Adjusted for optimal spacing
                 }
             },
             "color": {
-                "value": "#26A69A" // Your accent color for the nodes
+                "value": colors.nodeColor // Dynamic color based on theme
             },
             "shape": {
                 "type": "circle",
@@ -52,35 +75,35 @@ function initParticles() {
                 }
             },
             "opacity": {
-                "value": 0.15, // **Very low opacity for subtle nodes**
+                "value": colors.nodeOpacity, // Dynamic opacity
                 "random": false,
                 "anim": {
-                    "enable": true, // **Enable slight opacity animation for "breathing" effect**
-                    "speed": 0.3, // Very slow "breathing"
-                    "opacity_min": 0.05, // Minimum opacity
+                    "enable": true,
+                    "speed": 0.4, // Slightly faster for more life
+                    "opacity_min": colors.nodeOpacity * 0.3, // Proportional minimum
                     "sync": false
                 }
             },
             "size": {
-                "value": 5.5, // Slightly larger nodes than before, but still small
+                "value": 4, // Slightly smaller for elegance
                 "random": true,
                 "anim": {
-                    "enable": true, // **Enable slight size animation for "pulse" effect**
-                    "speed": 0.6, // Very slow size pulse
-                    "size_min": 1, // Minimum size
+                    "enable": true,
+                    "speed": 0.8, // Gentle pulsing
+                    "size_min": 1.5,
                     "sync": false
                 }
             },
             "line_linked": {
                 "enable": true,
-                "distance": 250, // **Increased distance for fewer, longer connections**
-                "color": "#1565C0", // Your primary color for the connections
-                "opacity": 0.08, // **Extremely low opacity for very faint lines**
-                "width": 1
+                "distance": 220, // Optimized distance
+                "color": colors.lineColor, // Dynamic color
+                "opacity": colors.lineOpacity, // Dynamic opacity
+                "width": 1.2 // Slightly thicker for better visibility
             },
             "move": {
                 "enable": true,
-                "speed": 0.3, // **Even slower movement for nodes**
+                "speed": 0.5, // Slightly faster movement
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -97,8 +120,8 @@ function initParticles() {
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": true, // Desktop hover still enabled
-                    "mode": "grab" // Or "repulse" for a subtle push away
+                    "enable": true,
+                    "mode": "grab"
                 },
                 "onclick": {
                     "enable": false,
@@ -108,9 +131,9 @@ function initParticles() {
             },
             "modes": {
                 "grab": {
-                    "distance": 180, // Adjust hover distance
+                    "distance": 160,
                     "line_linked": {
-                        "opacity": 0.3 // **Reduced hover line opacity for subtlety**
+                        "opacity": colors.lineOpacity * 4 // More visible on hover
                     }
                 },
                 "bubble": {
@@ -169,12 +192,20 @@ if (mdContent) {
     observer.observe(mdContent, { childList: true, subtree: true });
 }
 
-document.addEventListener('DOMContentLoad', () => {
+// Update the theme observer to reinitialize particles when theme changes
+document.addEventListener('DOMContentLoaded', () => {
+    initParticles();
+    
     const body = document.querySelector("body");
     const schemeObserver = new MutationObserver(mutations => {
         mutations.forEach(mutation => {
             if (mutation.attributeName === "data-md-color-scheme") {
-                initParticles();
+                // Remove existing particles and reinitialize with new colors
+                const existingParticlesDiv = document.getElementById('particles-js');
+                if (existingParticlesDiv) {
+                    existingParticlesDiv.remove();
+                }
+                setTimeout(initParticles, 100); // Small delay to ensure DOM update
             }
         });
     });

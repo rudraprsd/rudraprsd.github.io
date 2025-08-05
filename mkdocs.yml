@@ -11,21 +11,21 @@ theme:
     # scheme: slate
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
-      accent: red
+      primary: blue grey  # Better contrast than white, easier on eyes
+      accent: deep orange  # Warmer, less harsh than red
       toggle:
         icon: material/brightness-7
         name: The night is dark and full of terrors
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: brown
-      accent: deep orange
+      primary: blue grey  # Consistent with light mode
+      accent: amber       # Softer than deep orange, better for reading
       toggle:
         icon: material/brightness-4
         name: Dracarys
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter          # Perfect for reading blogs/content
+    code: JetBrains Mono
   
   features:
     - navigation.instant
