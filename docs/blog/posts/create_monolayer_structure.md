@@ -6,7 +6,7 @@ tags:
     - DFT, VASP
 ---
 
-## How to create a monolayer structure from bulk ?
+# How to create a monolayer structure ?
 
 <!-- more -->
 
