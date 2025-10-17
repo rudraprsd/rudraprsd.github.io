@@ -36,20 +36,16 @@ After experimenting with various platforms (Astro, MkDocs, Hugo, and even pure H
 Want to run this locally or use it as a template? Here's how:
 
 ```bash
-# Clone the repository
 git clone https://github.com/rudraprsd/rudraprsd.github.io.git
 
-# Navigate to the project directory
 cd personal-site
 
-# Install dependencies
 npm install
 
-# Start the development server
 npm run dev
 ```
 
-Visit `http://localhost:5173` and you're good to go!
+Visit `http://localhost:8080` and you're good to go!
 
 ## 📂 Project Structure
 
