@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# 🚀 Personal Portfolio & AI Blog
 
-## Project info
+Hey there! 👋 Welcome to the repository behind my personal website. This is where I share my journey through the fascinating world of artificial intelligence, machine learning, and software engineering.
 
-**URL**: https://lovable.dev/projects/df97d999-dd38-4089-bcc0-c6cd0c3c2dce
+## 🎯 What You'll Find Here
 
-## How can I edit this code?
+This site is my digital playground where I:
 
-There are several ways of editing your application.
+- **Share AI Insights** – Breaking down complex AI concepts into digestible pieces
+- **Discuss Research Papers** – Deep dives into cutting-edge ML research
+- **Showcase Projects** – Real-world AI/ML projects with interactive demos
+- **Document My Learning** – Because the best way to learn is to teach
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/df97d999-dd38-4089-bcc0-c6cd0c3c2dce) and start prompting.
+Built with modern web technologies for a smooth, responsive experience:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React 18** – For building the UI
+- **TypeScript** – Type safety and better developer experience
+- **Vite** – Lightning-fast build tool
+- **Tailwind CSS** – Utility-first styling
+- **shadcn/ui** – Beautiful, accessible components
 
-**Use your preferred IDE**
+## 🎨 Why This Stack?
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+After experimenting with various platforms (Astro, MkDocs, Hugo, and even pure HTML/CSS), I landed on React + TypeScript. Why? Because it offers the perfect balance of:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- ⚡ Performance
+- 🎨 Creative flexibility
+- 🧩 Component reusability
+- 📱 Responsive design out of the box
+- 🔧 Easy maintenance
 
-Follow these steps:
+## 🚀 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Want to run this locally or use it as a template? Here's how:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone the repository
+git clone https://github.com/rudraprsd/rudraprsd.github.io.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Navigate to the project directory
+cd personal-site
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Visit `http://localhost:5173` and you're good to go!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📂 Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/     # Reusable UI components
+├── data/          # Blog posts and project data
+├── pages/         # Main application pages
+├── hooks/         # Custom React hooks
+└── lib/           # Utility functions
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🤝 Contributing
 
-## What technologies are used for this project?
+Found a typo? Have a suggestion? Feel free to open an issue or submit a PR. I'm always open to feedback and improvements!
 
-This project is built with:
+## 📬 Let's Connect
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Thanks for stopping by! I hope you find something useful here. Whether you're learning AI, building projects, or just exploring, I'm glad to have you along for the ride.
 
-## How can I deploy this project?
+Feel free to reach out if you have questions, want to collaborate, or just chat about AI and tech!
 
-Simply open [Lovable](https://lovable.dev/projects/df97d999-dd38-4089-bcc0-c6cd0c3c2dce) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Built with ❤️ and lots of ☕**
