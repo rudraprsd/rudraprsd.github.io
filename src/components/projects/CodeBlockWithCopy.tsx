@@ -43,7 +43,7 @@ export default function CodeBlockWithCopy({
           variant="ghost"
           size="sm"
           onClick={handleCopy}
-          className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity"
+          className="absolute top-2 right-2 opacity-80 group-hover:opacity-100 transition-opacity"
         >
           {copied ? (
             <Check className="w-4 h-4 text-green-500" />
