@@ -58,6 +58,8 @@ src/
 └── lib/           # Utility functions
 ```
 
+> Currently it do not uses github-actions, It uses deploy from a branch.
+
 ## 🤝 Contributing
 
 Found a typo? Have a suggestion? Feel free to open an issue or submit a PR. I'm always open to feedback and improvements!
