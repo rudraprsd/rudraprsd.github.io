@@ -4,8 +4,38 @@ import { Badge } from "@/components/ui/badge";
 import { blogs } from "@/data/blogs";
 import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
+import { useMemo, useState } from "react";
+import { parseDateDMY } from "@/lib/utils";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select";
 
 const Blog = () => {
+  const [sortOption, setSortOption] = useState<'newest' | 'oldest' | 'az' | 'za'>('newest');
+
+  const sortedBlogs = useMemo(() => {
+    const copy = [...blogs];
+
+    if (sortOption === 'newest' || sortOption === 'oldest') {
+      copy.sort((a, b) => {
+        const ta = parseDateDMY(a.date)?.getTime() ?? 0;
+        const tb = parseDateDMY(b.date)?.getTime() ?? 0;
+        return sortOption === 'newest' ? tb - ta : ta - tb;
+      });
+    } else {
+      copy.sort((a, b) => {
+        const cmp = a.title.localeCompare(b.title);
+        return sortOption === 'az' ? cmp : -cmp;
+      });
+    }
+
+    return copy;
+  }, [sortOption, blogs]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -18,8 +48,25 @@ const Blog = () => {
           </p>
         </div>
 
+        <div className="mb-6 flex items-center justify-end gap-3">
+          <label className="text-sm text-muted-foreground">Sort:</label>
+          <div className="w-44">
+            <Select value={sortOption} onValueChange={(v) => setSortOption(v as any)}>
+              <SelectTrigger>
+                <SelectValue placeholder={sortOption === 'newest' ? 'Newest first' : undefined} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="newest">Newest</SelectItem>
+                <SelectItem value="oldest">Oldest</SelectItem>
+                <SelectItem value="az">A-Z</SelectItem>
+                <SelectItem value="za">Z-A</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {blogs.map((blog) => (
+          {sortedBlogs.map((blog) => (
             <Link key={blog.id} to={`/blog/${blog.id}`}>
               <Card className="h-full hover:border-accent transition-all hover:shadow-lg cursor-pointer">
                 <CardHeader>
