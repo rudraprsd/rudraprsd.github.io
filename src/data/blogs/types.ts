@@ -5,4 +5,5 @@ export interface Blog {
   date: string;
   tags: string[];
   content: string;
+  draft?: boolean;
 }

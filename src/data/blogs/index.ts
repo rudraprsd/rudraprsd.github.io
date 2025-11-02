@@ -9,8 +9,11 @@ const blogsList: Blog[] = [];
 
 Object.entries(blogModules).forEach(([path, module]) => {
   if (path.includes('types.ts') || path.includes('index.ts')) return;
-  
+
   Object.entries(module).forEach(([exportName, exportValue]: [string, any]) => {
+    // Skip drafts
+    if (exportValue?.draft === true) return;
+
     if (exportValue?.id && exportValue?.title) {
       blogExports[exportName] = exportValue;
       blogsList.push(exportValue as Blog);
