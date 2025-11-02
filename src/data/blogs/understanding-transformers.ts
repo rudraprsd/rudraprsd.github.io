@@ -6,6 +6,7 @@ export const understandingTransformers: Blog = {
   description: "A deep dive into the attention mechanism and transformer models",
   date: "2024-02",
   tags: ["Deep Learning", "NLP", "Transformers"],
+  draft: true,
   content: `# Understanding Transformer Architecture
 
 ## Introduction

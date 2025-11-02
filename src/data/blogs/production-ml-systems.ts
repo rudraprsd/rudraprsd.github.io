@@ -6,6 +6,7 @@ export const productionMlSystems: Blog = {
   description: "Best practices for deploying machine learning models at scale",
   date: "2024-01",
   tags: ["MLOps", "Production", "Engineering"],
+  draft: true,
   content: `# Building Production-Ready ML Systems
 
 ## The Gap Between Research and Production

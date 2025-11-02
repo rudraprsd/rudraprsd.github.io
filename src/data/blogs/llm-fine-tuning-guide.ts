@@ -6,6 +6,7 @@ export const llmFineTuningGuide: Blog = {
   description: "Practical guide to fine-tuning LLMs for specific tasks",
   date: "2023-12",
   tags: ["LLM", "Fine-tuning", "NLP"],
+  draft: true,
   content: `# Fine-tuning Large Language Models
 
 ## Introduction
