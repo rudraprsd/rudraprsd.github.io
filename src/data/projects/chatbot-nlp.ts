@@ -8,6 +8,7 @@ export const chatbotNLP: Project = {
   date: "2024-02",
   tags: ["NLP", "Transformers", "Python", "FastAPI"],
   githubUrl: "https://github.com/yourusername/chatbot-nlp",
+  draft: true,
   
   // Simple markdown content - perfect for straightforward projects
   content: `# NLP-Powered Chatbot

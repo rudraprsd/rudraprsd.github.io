@@ -6,6 +6,7 @@ export const neuralStyleTransfer: Project = {
   description: "Deep learning model for artistic style transfer using VGG19",
   date: "2024-01",
   tags: ["Deep Learning", "PyTorch", "Computer Vision"],
+  draft: true,
   content: `# Neural Style Transfer Implementation
 
 ## Overview

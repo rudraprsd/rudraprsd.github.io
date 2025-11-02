@@ -6,6 +6,7 @@ export const sentimentAnalysisBert: Project = {
   description: "Fine-tuned BERT model for multi-class sentiment classification",
   date: "2023-11",
   tags: ["NLP", "Transformers", "BERT"],
+  draft: true,
   content: `# BERT-based Sentiment Analysis
 
 ## Project Overview

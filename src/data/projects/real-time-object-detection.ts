@@ -16,6 +16,8 @@ export const realTimeObjectDetection: Project = {
   
   // Custom component with all interactive features!
   component: RealTimeObjectDetectionContent,
+
+  draft: true,
   
   // Fallback markdown content (optional)
   content: `# Real-Time Object Detection System

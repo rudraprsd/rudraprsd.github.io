@@ -6,6 +6,7 @@ export const objectDetectionYolo: Project = {
   description: "Custom YOLOv8 model trained for industrial defect detection",
   date: "2023-09",
   tags: ["Computer Vision", "Object Detection", "YOLOv8"],
+  draft: true,
   content: `# Real-time Object Detection with YOLOv8
 
 ## Introduction
