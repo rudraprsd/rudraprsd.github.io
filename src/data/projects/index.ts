@@ -12,10 +12,12 @@ export const projects: Project[] = Object.entries(projectModules)
   .flatMap(([, module]) => {
     // Get all exported values from the module
     return Object.values(module).filter(
-      (value): value is Project => 
-        typeof value === 'object' && 
-        value !== null && 
-        'id' in value && 
-        'title' in value
+      (value): value is Project =>
+        typeof value === 'object' &&
+        value !== null &&
+        'id' in value &&
+        'title' in value &&
+        // Skip drafts
+        (value as any).draft !== true
     );
   });

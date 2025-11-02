@@ -5,6 +5,7 @@ export interface Project {
   title: string;
   description: string;
   date: string;
+  draft?: boolean;
   tags: string[];
   content?: string; // Made optional since we can use component instead
   component?: () => ReactNode; // Custom component for rich, interactive layouts
