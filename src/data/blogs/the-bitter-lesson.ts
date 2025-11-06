@@ -10,7 +10,7 @@ export const productionMlSystems: Blog = {
 The most effective approach in seventy years of AI research is the use of 
 **general methods that leverage computation**.
 
-The central thesis, known as **The Bitter Lesson,** is based on historical observation in fields 
+The central thesis, known as **[The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html),** is based on historical observation in fields 
 like computer chess, Go, speech recognition, and computer vision.
 
 ### The Problem
