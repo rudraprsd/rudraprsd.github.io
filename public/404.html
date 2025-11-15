@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Not found — loading app…</title>
+    <script>
+      (function () {
+        // Preserve the originally requested path so the client router can handle it
+        const originalPath = location.pathname + location.search + location.hash;
+
+        // Try to fetch the app's index and inject it. If that fails, redirect to root.
+        fetch('/index.html')
+          .then(function (res) {
+            if (!res.ok) throw new Error('index.html not found');
+            return res.text();
+          })
+          .then(function (html) {
+            // Overwrite the current document with the app's index.html
+            document.open();
+            document.write(html);
+            document.close();
+
+            // Replace the URL in history so the SPA router sees the original path
+            history.replaceState({}, '', originalPath);
+          })
+          .catch(function () {
+            // Fallback: go to the site root
+            location.replace('/');
+          });
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/" />
+      JavaScript is required. Redirecting to <a href="/">home</a>.
+    </noscript>
+  </body>
+</html>
