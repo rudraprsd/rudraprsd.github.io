@@ -1,6 +1,6 @@
 import { Blog } from './types';
 
-export const productionMlSystems: Blog = {
+export const theBitterLesson: Blog = {
   id: "the-bitter-lesson",
   title: "The Bitter Lesson in AI",
   description: "Summary of The Bitter Lesson by Rich Sutton",
