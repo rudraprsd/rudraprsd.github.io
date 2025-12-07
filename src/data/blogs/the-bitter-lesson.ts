@@ -4,7 +4,7 @@ export const theBitterLesson: Blog = {
   id: "the-bitter-lesson",
   title: "The Bitter Lesson in AI",
   description: "Summary of The Bitter Lesson by Rich Sutton",
-  date: "29-10-2003",
+  date: "29-10-2025",
   tags: ["Machine Learning", "AI", "LLM"],
   content: `
 The most effective approach in seventy years of AI research is the use of 
