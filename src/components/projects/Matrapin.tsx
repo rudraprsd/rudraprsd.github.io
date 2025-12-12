@@ -22,9 +22,14 @@ export default function Matrapin() {
 
       <div className="space-y-6 text-muted-foreground">
         <p className="text-lg leading-relaxed text-foreground">
-            We don't remember your passwords. We just don't let you forget them. MatraPIN offers secure, memorable PINs in Odia, Telugu, Tamil, and Malayalam - with zero data storage.
+        We don't remember your passwords. We just don't let you forget them. MatraPIN offers secure, memorable PINs in Odia, Telugu, Tamil, and Malayalam - with zero data storage.
+
         </p>
 
+        <p className="text-lg leading-relaxed text-foreground">
+        Made by me and <a href="https://sk-panigrahi.github.io/" target="_blank" rel="noopener noreferrer">Suraj </a>
+
+        </p>
 
       </div>
     </div>
