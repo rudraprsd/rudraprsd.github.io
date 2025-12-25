@@ -40,6 +40,14 @@ const Navigation = () => {
             >
               Blog
             </Link>
+            <Link 
+              to="/gallery" 
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                isActive("/gallery") ? "text-accent" : "text-foreground/80"
+              }`}
+            >
+              Gallery
+            </Link>
           </div>
         </div>
       </div>
