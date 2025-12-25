@@ -6,6 +6,7 @@ const sampleGallery: GalleryItem = {
   description: 'A beautiful collection of sample photographs demonstrating the gallery feature. Replace this with your own photos and memories!',
   date: '25-12-2024',
   category: 'photography',
+  type: 'collection',
   coverImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
   images: [
     {

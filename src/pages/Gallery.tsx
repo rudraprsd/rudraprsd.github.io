@@ -125,9 +125,16 @@ const Gallery = () => {
                       <Badge className="absolute top-3 right-3 capitalize">
                         {item.category}
                       </Badge>
-                      <div className="absolute bottom-3 left-3 right-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p className="text-sm font-medium">{item.images.length} photos</p>
-                      </div>
+                      {item.type === 'single' && item.images[0]?.caption && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+                          <p className="text-white text-sm font-medium">{item.images[0].caption}</p>
+                        </div>
+                      )}
+                      {item.type === 'collection' && (
+                        <div className="absolute bottom-3 left-3 right-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <p className="text-sm font-medium">{item.images.length} photos</p>
+                        </div>
+                      )}
                     </div>
                     <CardContent className="p-4">
                       <h3 className="font-semibold text-lg mb-2 line-clamp-1">{item.title}</h3>
