@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import Magnet from "@/components/Magnet";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -22,13 +21,11 @@ const Index = () => {
               Based at <span className="text-accent">127.0.0.1</span>
             </p>
             <div className="flex flex-wrap gap-4 mb-12">
-              <Magnet padding={50} disabled={false} magnetStrength={4}>
-                <Link to="/projects">
-                  <Button size="lg" className="gap-2">
-                    View Projects <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
-              </Magnet>
+              <Link to="/projects">
+                <Button size="lg" className="gap-2">
+                  View Projects <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
               <Link to="/blog">
                   <Button size="lg" variant="outline">
                     Read Blog
