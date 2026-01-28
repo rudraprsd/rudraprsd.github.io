@@ -2,74 +2,69 @@ import { Blog } from './types';
 
 export const pixi: Blog = {
   id: "pixi",
-  title: "Use pixi instead of Conda env",
-  description: "It is good in managing dependecy conflict and package based on project",
-  date: "2026-01",
-  tags: ["python", "devOPs"],
-//   draft: true,
-  content: `# pixi is a good option.
-Earlier I was using venv and conda env.
-Ofcourse conda env has more advantage. But sometime there is a dependecy conflict when you try to reproduce a conda env, and it is because of conda-forge and
-pypi (pip) channel.
-This is a headache.
-and also if you want to create different conda envs according to your project, then eventually you will forget which env for which one. You will end up with 
-hundreds of conda env and you need to search again which is for what.
+  title: "Why I Switched to pixi for Python Project Environments",
+  description: "Simplify your Python workflow with fast, conflict-free project environments using pixi.",
+  date: "28-01-2026",
+  tags: ["python", "devops"],
+  content: `# Why I Switched to pixi for Python Project Environments
 
-pixi is solving this problem. It is fast as it is rust based, modern and most important solves dependecy conflicts well and also supports every languages.
+For a long time, I relied on \`venv\` and Conda environments to manage my Python projects. While Conda offers many advantages, I often ran into frustrating dependency conflicts—especially when mixing packages from \`conda-forge\` and PyPI (pip). Reproducing environments could become a headache, and as the number of projects grew, so did the clutter of forgotten Conda environments. It was easy to lose track of which environment belonged to which project.
 
-It will automatically create it's environment according to your project. Yes, that's right. It considers a project directory as an environment and isolates
-from others. It do not install everything eachtime instead it does create a hard link.
+Enter **pixi**: a modern, Rust-based tool that has transformed my workflow. Pixi is fast, robust, and-most importantly-handles dependency conflicts gracefully. It supports multiple languages and treats each project directory as its own isolated environment. Instead of duplicating packages, pixi uses hard links, making environment creation both efficient and lightweight.
 
-## How to use pixi ?
-1. First install pixi. Check in the [official website](https://pixi.prefix.dev/latest/installation/).
-2. Verify installation
-\`\`\`bash
-pixi --version
-\`\`\`
-3. Go to your project directory, and initialize with
-\`\`\`bash
-pixi init
-\`\`\`
-4. Add required python packages
-\`\`\`bash
-pixi add numpy matplotlib
-\`\`\`
-- By default it will install from \`conda-forge\` channel.
-5. To run a code in python
-\`\`\`bash
-pixi run python file.py
-\`\`\`
-> Note: I know it is kind of weird. You have to run \`pixi run\` every time. And here instead of python3 you are using python as pixi recognizes it as python.
-> It automatically installs the python. But you can always install particular version such as \`pixi add python=3.12\`
+## Getting Started with pixi
 
-6. You can check the python version as usual:
-\`\`\`bash
-pixi run python --version
-\`\`\`
+1. **Install pixi**  
+   Visit the [official installation guide](https://pixi.prefix.dev/latest/installation/) to get started.
 
-7. Now, when you want to run as a jupyter kerenl, you need to manually add it to jupyter kernel list.
-\`\`\`bash
-pixi run python -m ipykernel install \
---user \
---name project-name \
---display-name "Pixi (project name)"
-\`\`\`
+2. **Verify your installation:**
+   \`\`\`bash
+   pixi --version
+   \`\`\`
 
-> Of course, you need to install jupyter notebook/lab before, using:
- \`\`\`bash
- pixi add ipykernel jupyterlab
- \`\`\`
+3. **Initialize pixi in your project directory:**
+   \`\`\`bash
+   pixi init
+   \`\`\`
 
-> In \`vscode\`, select the newly created pixi kerenl.
+4. **Add required Python packages:**
+   \`\`\`bash
+   pixi add numpy matplotlib
+   \`\`\`
+   By default, pixi installs packages from the \`conda-forge\` channel.
 
----
+5. **Run your Python code:**
+   \`\`\`bash
+   pixi run python file.py
+   \`\`\`
+   > **Note:** You'll use \`pixi run\` before your commands. Pixi automatically installs Python, but you can specify a version (e.g., \`pixi add python=3.12\`).
 
-*I am just starting with this pixi. It is working for me. I will let you know any problems and its troubleshoot solutions if I face. You are also welcome to
-share any throught through a github issue.*
+6. **Check your Python version:**
+   \`\`\`bash
+   pixi run python --version
+   \`\`\`
 
-Thank you for reading this blog.
+7. **Set up a Jupyter kernel:**
+   \`\`\`bash
+   pixi run python -m ipykernel install \\
+     --user \\
+     --name project-name \\
+     --display-name "Pixi (project name)"
+   \`\`\`
+   > **Important:** Be sure to install Jupyter and ipykernel first:
+   \`\`\`bash
+   pixi add ipykernel jupyterlab
+   \`\`\`
+   In VS Code, simply select your new pixi kernel from the kernel picker.
 
-*Disclaimer: This blog is a personal passion project. I am not responsible for any liabilities.*
+<hr className="my-12" />
 
+I'm still exploring pixi, but so far it's been a game-changer for my development workflow. If I encounter any issues or discover useful troubleshooting tips, I'll update this post. If you have experiences or suggestions, feel free to reach out via [GitHub Issues](https://github.com/rudraprsd/rudraprsd.github.io/issues).
+
+Thank you for reading! I hope this helps you streamline your own project environments.
+
+<p className="mt-8 text-sm text-muted-foreground italic">
+  This article reflects my personal experience and is intended for informational purposes only. Please use at your own discretion.
+</p>
 `
 };

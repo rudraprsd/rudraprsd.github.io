@@ -124,12 +124,20 @@ All colors MUST be HSL.
     @apply text-accent hover:text-accent/80 underline transition-colors;
   }
   
-  .prose-custom ul, .prose-custom ol {
-    @apply mb-4 pl-6;
+  .prose-custom ul {
+    @apply mb-4 pl-6 list-disc;
+  }
+  
+  .prose-custom ol {
+    @apply mb-4 pl-6 list-decimal;
   }
   
   .prose-custom li {
     @apply mb-2;
+  }
+  
+  .prose-custom hr {
+    @apply my-8 border-t border-border opacity-50;
   }
   
   .prose-custom code {
