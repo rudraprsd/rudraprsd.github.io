@@ -13,7 +13,7 @@ The common thread? They all took the Third Door.
 
 In life, there are always three ways in:
 
-1. **The First Door:" The main entrance, where the line curves around the block and 99% of people wait, hoping to get in.
+1. "The First Door:" The main entrance, where the line curves around the block and 99% of people wait, hoping to get in.
 
 2. "The Second Door:" The VIP entrance, where billionaires and celebrities slip through.
 
