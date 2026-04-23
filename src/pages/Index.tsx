@@ -12,13 +12,15 @@ const Index = () => {
         {/* Hero Section */}
         <section className="container mx-auto px-6 py-24 md:py-32">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-3 leading-tight">
               Rudra Prasad{" "}
               <span className="text-accent">Sahu</span>
             </h1>
+            <p className="text-sm font-medium tracking-widest uppercase mb-6" style={{ color: 'hsl(24, 60%, 55%)' }}>
+              AI Engineer&nbsp;&nbsp;•&nbsp;&nbsp;Computer Vision&nbsp;&nbsp;•&nbsp;&nbsp;Entrepreneur
+            </p>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              I create intelligent, practical solutions with machine learning and AI — tackling problems of any size with creativity and precision.
-              Based at <span className="text-accent">127.0.0.1</span>
+              I build AI systems that solve real problems.
             </p>
             <div className="flex flex-wrap gap-4 mb-12">
               <Link to="/projects">
@@ -69,21 +71,72 @@ const Index = () => {
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold">Deep Learning</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Neural networks, transformers, CNNs, and RNNs. Experience with PyTorch, TensorFlow, and JAX.
+                  Building and optimizing neural networks for real-world applications.
                 </p>
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold">Computer Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Object detection, image segmentation, and visual recognition systems using state-of-the-art architectures.
+                  Developing vision systems for detection, recognition, and security.
                 </p>
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold">NLP</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Large language models, sentiment analysis, and text generation with transformers and BERT.
+                  Working with language models to build intelligent interfaces and tools.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Game of Thrones Quote Section */}
+        <section className="py-20 overflow-hidden" style={{ background: 'hsl(20, 15%, 10%)' }}>
+          <div className="container mx-auto px-6 flex flex-col items-center text-center">
+            {/* Direwolf-inspired sigil ornament */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to right, transparent, hsl(24, 75%, 45%))' }} />
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18 3L21.5 13H32L23.5 19L27 29L18 23L9 29L12.5 19L4 13H14.5L18 3Z" fill="hsl(24, 75%, 45%)" opacity="0.9"/>
+              </svg>
+              <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to left, transparent, hsl(24, 75%, 45%))' }} />
+            </div>
+
+            {/* Source attribution */}
+            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'hsl(24, 40%, 50%)' }}>
+              Game of Thrones &mdash; Syrio Forel, Water Dancer of Braavos
+            </p>
+
+            {/* The Quote */}
+            <blockquote className="max-w-2xl">
+              <p
+                className="text-3xl md:text-4xl font-bold leading-snug mb-4"
+                style={{
+                  color: 'hsl(35, 20%, 92%)',
+                  fontFamily: '"Georgia", serif',
+                  textShadow: '0 0 40px hsl(24 75% 45% / 0.25)',
+                }}
+              >
+                &ldquo;What do we say to the God of Death?&rdquo;
+              </p>
+              <p
+                className="text-4xl md:text-5xl font-extrabold"
+                style={{
+                  color: 'hsl(24, 75%, 55%)',
+                  fontFamily: '"Georgia", serif',
+                  letterSpacing: '0.04em',
+                  textShadow: '0 0 60px hsl(24 75% 50% / 0.4)',
+                }}
+              >
+                Not Today.
+              </p>
+            </blockquote>
+
+            {/* Bottom ornament */}
+            <div className="flex items-center gap-4 mt-8">
+              <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to right, transparent, hsl(24, 75%, 45%))' }} />
+              <div className="w-2 h-2 rounded-full" style={{ background: 'hsl(24, 75%, 45%)' }} />
+              <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to left, transparent, hsl(24, 75%, 45%))' }} />
             </div>
           </div>
         </section>
