@@ -33,12 +33,12 @@ const Projects = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <main className="flex-1 container mx-auto px-6 py-12">
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">Projects</h1>
           <p className="text-xl text-muted-foreground">
-            A collection of machine learning and AI projects I've worked on.
+            Projects I've built across AI, software, and real-world problem solving.
           </p>
         </div>
 
