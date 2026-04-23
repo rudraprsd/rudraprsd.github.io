@@ -5,7 +5,7 @@ export const matrapin: Project = {
   id: "matrapin",
   title: "Matrapin",
   description: "Secure, memorable PINs powered by Indian languages",
-  date: "07-12-2025",
+  date: "01-02-2025",
   tags: ["Security"],
   component: Matrapin,
   draft: false,
