@@ -91,8 +91,18 @@ const Index = () => {
         </section>
 
         {/* Game of Thrones Quote Section */}
-        <section className="py-20 overflow-hidden" style={{ background: 'hsl(20, 15%, 10%)' }}>
-          <div className="container mx-auto px-6 flex flex-col items-center text-center">
+        <section
+          className="py-20 overflow-hidden relative"
+          style={{
+            backgroundImage: 'url("/got-background.webp")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+          }}
+        >
+          {/* Dark overlay for readability */}
+          {/* <div className="absolute inset-0" style={{ background: 'rgba(10, 6, 4, 0.78)' }} /> */}
+          <div className="relative z-10 container mx-auto px-6 flex flex-col items-center text-center">
             {/* Direwolf-inspired sigil ornament */}
             <div className="flex items-center gap-4 mb-8">
               <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to right, transparent, hsl(24, 75%, 45%))' }} />
