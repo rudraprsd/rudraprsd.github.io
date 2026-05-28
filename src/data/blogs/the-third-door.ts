@@ -6,7 +6,6 @@ export const theThirdDoor: Blog = {
   description: "There's always a way",
   date: "20-04-2026",
   tags: ["book", "entrepreneur", "AI"],
-  draft: true,
   content: `
 Two months ago, I finished reading ["The Third Door" - By Alex Banayan](https://www.amazon.in/Third-Door-Alex-Banayan/dp/0804136661). There are countless books on success and self-mastery, but this one is different. It chronicles the author's own journey alongside the life lessons of legends - athletes, singers, world-class directors, founders, and CEOs. It doesn't just celebrate their triumphs; it exposes their failures. 
 
