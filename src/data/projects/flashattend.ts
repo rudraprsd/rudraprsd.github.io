@@ -1,7 +1,6 @@
-import AwesomeBZ from '@/components/projects/AwesomeBZ';
 import { Project } from './types';
 
-export const awesomeBZ: Project = {
+export const flashattend: Project = {
   id: "flashAttend",
   title: "FlashAttend",
   description: "AI attendance. Fast. Real-time",

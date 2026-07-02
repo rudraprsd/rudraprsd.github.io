@@ -20,7 +20,7 @@ const Index = () => {
               AI Engineer&nbsp;&nbsp;•&nbsp;&nbsp;Computer Vision&nbsp;&nbsp;•&nbsp;&nbsp;Entrepreneur
             </p>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              I build AI systems that solve real problems.
+              This is the best time to live; I am building the next best time to live.
             </p>
             <div className="flex flex-wrap gap-4 mb-12">
               <Link to="/projects">
